@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link href="./regform.css" rel="stylesheet">
+
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <p>Please fill out this form with the required information</p>
+    <form method="post" action='https://www.idp.com'>
+        <fieldset>
+            <label for="first-name">First Name: <input id="first-name" name="first-name" type="text" required /></label>
+            <label for="last-name">Last Name: <input id="last-name" name="last-name" type="text" required /></label>
+            <label for="email">Email: <input id="email" name="email" type="email" required /></label>
+            <label for="new-password">Create a New Password: <input id="new-password" name="new-password" type="password" pattern="[a-z0-5]{8,}" required /></label>
+          </fieldset>
+          <fieldset>
+            <label for="personal-mail"><input id="personal-mail" type="radio" name="mail-type" class="inline" /> Personal Mail</label>
+            <label for="work-mail"><input id="work-mail" type="radio" name="work-type" class="inline" />Work Mail</label>
+            <label for="terms-and-conditions">
+              <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" /> I accept the <a href="https://www.idp.com">terms and conditions</a>
+            </label>
+          </fieldset>
+          <fieldset>
+            <label for="upload-resume">Upload your resume: <input id="resume-picture" type="file" name="file" /></label>
+            <label for="referrer">How did you hear about us?
+              <select id="referrer" name="referrer">
+                <option value="">(select one)</option>
+                <option value="1">Consultancies</option>
+                <option value="2">Friends</option>
+                <option value="3">Colleges</option>
+                <option value="4">Other</option>
+              </select>
+            </label>
+            <label for="bio">Describe your interests:
+              <textarea id="bio" name="bio" rows="2" cols="30" placeholder="I like exploring countries..."></textarea>
+            </label>
+          </fieldset>
+    </form>
+</body>
+</html>
